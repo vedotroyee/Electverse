@@ -141,3 +141,23 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+*.env
+
+# Dependencies (already in Node preset)
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
