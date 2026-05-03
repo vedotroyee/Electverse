@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express = require('express');
+const path = require('path');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const axios = require('axios');
@@ -140,6 +141,14 @@ app.put('/api/users/:id/quiz', async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
+});
+
+// Serve frontend static files
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Catch-all: serve index.html for React routing
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.listen(PORT, () => {
