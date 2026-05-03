@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 // Gemini Setup
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || 'place_holder_key');
 const model = genAI.getGenerativeModel({ 
-  model: "gemini-2.0-flash-lite",
+  model: "gemini-flash-latest",
   systemInstruction: "You are ElectVerse Guide, an expert election education assistant. You ONLY answer questions about elections, voting systems, democracy, electoral processes, candidates, political parties, voting rights, election history, and related civic topics worldwide. If asked anything outside this scope, politely redirect back to elections. Keep answers under 120 words. Use simple language. End every answer with one relevant follow-up question to keep learning going. Occasionally use a relevant emoji.",
 });
 
@@ -29,46 +29,32 @@ mongoose.connect(MONGODB_URI)
 // Routes
 
 // --- AI Chat Endpoint ---
-const MODELS_TO_TRY = [
-  "gemini-2.0-flash-lite-001",
-  "gemini-2.0-flash",
-  "gemini-2.0-flash-001",
-];
-
-async function tryGeminiWithFallback(messages) {
-  const chatHistory = messages.slice(0, -1).map(m => ({
-    role: m.role === 'assistant' ? 'model' : 'user',
-    parts: [{ text: m.content }],
-  }));
-  const lastMessage = messages[messages.length - 1].content;
-
-  for (const modelName of MODELS_TO_TRY) {
-    try {
-      const m = genAI.getGenerativeModel({
-        model: modelName,
-        systemInstruction: "You are ElectVerse Guide, an expert election education assistant. You ONLY answer questions about elections, voting systems, democracy, electoral processes, candidates, political parties, voting rights, election history, and related civic topics worldwide. If asked anything outside this scope, politely redirect back to elections. Keep answers under 120 words. Use simple language. End every answer with one relevant follow-up question to keep learning going. Occasionally use a relevant emoji.",
-      });
-      const chat = m.startChat({ history: chatHistory });
-      const result = await chat.sendMessage(lastMessage);
-      const response = await result.response;
-      console.log(`✅ Success with model: ${modelName}`);
-      return response.text();
-    } catch (err) {
-      console.warn(`⚠️ Model ${modelName} failed (${err.status}): trying next...`);
-      if (err.status !== 429 && err.status !== 404) throw err;
-    }
-  }
-  throw new Error("All models quota exhausted");
-}
-
 app.post('/api/chat', async (req, res) => {
   try {
     const { messages } = req.body;
-    const text = await tryGeminiWithFallback(messages);
-    res.json({ content: text });
+    
+    // Format messages for Gemini (map 'assistant' to 'model')
+    const chatHistory = messages.slice(0, -1).map(m => ({
+      role: m.role === 'assistant' ? 'model' : 'user',
+      parts: [{ text: m.content }],
+    }));
+    
+    const lastMessage = messages[messages.length - 1].content;
+
+    const chat = model.startChat({
+      history: chatHistory,
+    });
+
+    const result = await chat.sendMessage(lastMessage);
+    const response = await result.response;
+    res.json({ content: response.text() });
   } catch (error) {
-    console.error("Gemini Error (all models failed):", error.message);
-    res.status(429).json({ message: "quota_exceeded" });
+    console.error("Gemini Error:", error);
+    if (error.status === 429) {
+      res.status(429).json({ message: "quota_exceeded" });
+    } else {
+      res.status(500).json({ message: "AI error occurred" });
+    }
   }
 });
 
