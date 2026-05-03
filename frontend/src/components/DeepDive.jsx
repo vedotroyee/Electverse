@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import API_BASE from '../config';
 
 const quizQ = [
   { q: "How many seats are required for a majority in the Lok Sabha?", o: ["250", "272", "300", "543"], a: 1 },
@@ -42,7 +43,7 @@ export default function DeepDive({ user, roleContent }) {
         // Save score to DB
         if (user && user._id) {
           try {
-            await axios.put(`http://localhost:5000/api/users/${user._id}/score`, { score: newScore });
+            await axios.put(`${API_BASE}/api/users/${user._id}/score`, { score: newScore });
           } catch (err) {
             console.error("Failed to save score", err);
           }

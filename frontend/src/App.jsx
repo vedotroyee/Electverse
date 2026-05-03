@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, useNavigate, useLocation, Navigate } from 'react-router-dom';
 import axios from 'axios';
+import API_BASE from './config';
 import LoginGate from './components/LoginGate';
 import Hub from './components/Hub';
 import SystemJourney from './components/SystemJourney';
@@ -34,7 +35,7 @@ function App() {
   const handleEnterSystem = async (sysId) => {
     if (user && user._id) {
       try {
-        await axios.put(`http://localhost:5000/api/users/${user._id}/progress`, { systemId: sysId });
+        await axios.put(`${API_BASE}/api/users/${user._id}/progress`, { systemId: sysId });
       } catch (err) {
         console.error("Error updating progress:", err);
       }

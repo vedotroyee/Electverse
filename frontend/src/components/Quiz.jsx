@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import API_BASE from '../config';
 import Chapter from './Chapter';
 import { useTranslation } from 'react-i18next';
 
@@ -70,7 +71,7 @@ export default function Quiz({ user }) {
 
     if (user && user._id) {
       try {
-        await axios.put(`http://localhost:5000/api/users/${user._id}/quiz`, { result: finalRes });
+        await axios.put(`${API_BASE}/api/users/${user._id}/quiz`, { result: finalRes });
       } catch (err) {
         console.error("Failed to save quiz result", err);
       }

@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import axios from 'axios';
+import API_BASE from '../config';
 import Globe3D from './Globe3D';
 import { useTranslation } from 'react-i18next';
 
@@ -29,7 +30,7 @@ export default function LoginGate({ onLoginSuccess }) {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:5000/api/users', { name, country, purpose });
+      const res = await axios.post(`${API_BASE}/api/users`, { name, country, purpose });
       onLoginSuccess(res.data);
     } catch (error) {
       console.error("Login failed:", error);

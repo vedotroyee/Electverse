@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
+import API_BASE from '../../config';
 import { MessageSquare, Newspaper, X, Send, Globe, ChevronRight } from 'lucide-react';
 import './AIPanel.css';
 
@@ -96,7 +97,7 @@ const AIPanel = () => {
   const fetchNews = async (region) => {
     const r = region || selectedRegion;
     try {
-      const response = await axios.get(`http://localhost:5000/api/news?region=${r}`);
+      const response = await axios.get(`${API_BASE}/api/news?region=${r}`);
       if (response.data && response.data.length > 0) {
         setNews(response.data);
         setHasUnreadNews(false); // user is looking at news
@@ -134,7 +135,7 @@ const AIPanel = () => {
     setIsTyping(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/chat', {
+      const response = await axios.post(`${API_BASE}/api/chat`, {
         messages: [...messages, userMsg].map(m => ({ role: m.role, content: m.content }))
       });
       setMessages(prev => [...prev, { role: 'assistant', content: response.data.content }]);

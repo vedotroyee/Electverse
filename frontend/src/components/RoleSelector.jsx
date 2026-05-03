@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import API_BASE from '../config';
 
 export default function RoleSelector({ user, onRoleSelect }) {
   const [selectedRole, setSelectedRole] = useState(null);
@@ -17,7 +18,7 @@ export default function RoleSelector({ user, onRoleSelect }) {
     // Save role to DB
     if (user && user._id) {
       try {
-        await axios.put(`http://localhost:5000/api/users/${user._id}/role`, { role: roleId });
+        await axios.put(`${API_BASE}/api/users/${user._id}/role`, { role: roleId });
       } catch (err) {
         console.error("Failed to save role", err);
       }
