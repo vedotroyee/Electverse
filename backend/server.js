@@ -28,19 +28,31 @@ mongoose.connect(MONGODB_URI)
   .catch(err => console.error('MongoDB connection error:', err));
 
 // Routes
+app.get('/api/test', (req, res) => {
+  res.json({ message: "Backend is reachable!" });
+});
 
 // --- AI Chat Endpoint ---
 app.post('/api/chat', async (req, res) => {
+  console.log("Chat request received:", req.body);
   try {
     const { messages } = req.body;
     
+    if (!messages || !Array.isArray(messages) || messages.length === 0) {
+      return res.status(400).json({ message: "Invalid messages format" });
+    }
+
     // Format messages for Gemini (map 'assistant' to 'model')
-    const chatHistory = messages.slice(0, -1).map(m => ({
-      role: m.role === 'assistant' ? 'model' : 'user',
-      parts: [{ text: m.content }],
-    }));
+    const chatHistory = messages.slice(0, -1).map(m => {
+      if (!m || !m.content) return null;
+      return {
+        role: m.role === 'assistant' ? 'model' : 'user',
+        parts: [{ text: m.content }],
+      };
+    }).filter(Boolean);
     
-    const lastMessage = messages[messages.length - 1].content;
+    const lastMessage = messages[messages.length - 1]?.content;
+    if (!lastMessage) return res.status(400).json({ message: "Last message content missing" });
 
     const chat = model.startChat({
       history: chatHistory,
@@ -48,9 +60,16 @@ app.post('/api/chat', async (req, res) => {
 
     const result = await chat.sendMessage(lastMessage);
     const response = await result.response;
-    res.json({ content: response.text() });
+    const text = response.text();
+    console.log("Gemini Response:", text);
+    res.json({ content: text });
   } catch (error) {
-    console.error("Gemini Error:", error);
+    console.error("DETAILED Gemini Error:", {
+      message: error.message,
+      stack: error.stack,
+      status: error.status,
+      response: error.response?.data
+    });
     if (error.status === 429) {
       res.status(429).json({ message: "quota_exceeded" });
     } else {
@@ -147,7 +166,7 @@ app.put('/api/users/:id/quiz', async (req, res) => {
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Catch-all: serve index.html for React routing
-app.get('*', (req, res) => {
+app.use((req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
