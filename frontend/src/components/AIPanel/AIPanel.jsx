@@ -16,48 +16,20 @@ const REGIONS = [
 ];
 
 const FALLBACK_NEWS = [
-  {
-    source: { name: "Global Times" },
-    publishedAt: new Date().toISOString(),
-    title: "Major Election Reform Announced in 12 Nations",
-    description: "New voting protocols aim to increase transparency and voter turnout across multiple democratic nations.",
-    url: "#",
-  },
-  {
-    source: { name: "Civic Daily" },
-    publishedAt: new Date().toISOString(),
-    title: "How Digital IDs are Shaping Modern Elections",
-    description: "Technological advancements are revolutionizing the way citizens cast their ballots.",
-    url: "#",
-  },
-  {
-    source: { name: "Election Watch" },
-    publishedAt: new Date().toISOString(),
-    title: "Youth Voter Turnout Hits Historic Highs",
-    description: "Recent data shows a significant increase in engagement among voters aged 18-25.",
-    url: "#",
-  },
-  {
-    source: { name: "Democracy Now" },
-    publishedAt: new Date().toISOString(),
-    title: "The Future of Electoral Colleges Worldwide",
-    description: "Exploring different systems used to balance regional and national interests.",
-    url: "#",
-  },
-  {
-    source: { name: "Policy Pulse" },
-    publishedAt: new Date().toISOString(),
-    title: "Campaign Financing Laws: A Global Comparison",
-    description: "Analyzing how different countries regulate the flow of money in politics.",
-    url: "#",
-  },
-  {
-    source: { name: "Voter Voice" },
-    publishedAt: new Date().toISOString(),
-    title: "Accessibility in Voting: Closing the Gap",
-    description: "Efforts to ensure every citizen, regardless of ability, can exercise their right to vote.",
-    url: "#",
-  }
+    {
+      source: { name: "ElectVerse Global" },
+      publishedAt: new Date().toISOString(),
+      title: "Democratic Participation Rising Worldwide",
+      description: "Analysis shows increased engagement in recent national elections across various voting systems.",
+      url: "#",
+    },
+    {
+      source: { name: "Electoral Insight" },
+      publishedAt: new Date().toISOString(),
+      title: "Technology's Role in Modern Voting",
+      description: "How digital tools are making elections more accessible while maintaining security and integrity.",
+      url: "#",
+    }
 ];
 
 const AIPanel = () => {
@@ -262,19 +234,25 @@ const AIPanel = () => {
               </div>
               
               <div className="news-list">
-                {news.map((item, i) => (
-                  <div key={i} className="news-card">
-                    <div className="news-meta">
-                      <span className="source">{item.source.name}</span>
-                      <span className="time">• {formatTime(item.publishedAt)}</span>
+                {news && news.length > 0 ? (
+                  news.map((item, i) => (
+                    <div key={i} className="news-card">
+                      <div className="news-meta">
+                        <span className="source">{item.source?.name || 'News'}</span>
+                        <span className="time">• {formatTime(item.publishedAt)}</span>
+                      </div>
+                      <h4 className="news-title">{item.title}</h4>
+                      <p className="news-desc">{item.description}</p>
+                      <a href={item.url} target="_blank" rel="noopener noreferrer" className="read-more">
+                        Read More <ChevronRight size={14} />
+                      </a>
                     </div>
-                    <h4 className="news-title">{item.title}</h4>
-                    <p className="news-desc">{item.description}</p>
-                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="read-more">
-                      Read More <ChevronRight size={14} />
-                    </a>
+                  ))
+                ) : (
+                  <div className="no-news-placeholder">
+                    <p>Fetching the latest election updates...</p>
                   </div>
-                ))}
+                )}
               </div>
             </div>
           )}
