@@ -1,0 +1,305 @@
+{
+  "common": {
+    "app_name": "ElectVerse",
+    "compare": "Compare",
+    "take_quiz": "Take the Quiz",
+    "back_to_hub": "Back to Hub",
+    "loading": "Loading...",
+    "error": "Error occurred",
+    "subtitle": "Decoding Democracy Worldwide",
+    "click_to_enter": "Click anywhere to enter",
+    "choose_language": "SELECT YOUR MISSION LANGUAGE"
+  },
+  "login": {
+    "welcome": "Welcome to ElectVerse",
+    "subtitle": "Your portal to understanding global electoral systems.",
+    "identity_label": "Identify yourself",
+    "identity_placeholder": "Enter your name...",
+    "origin_label": "Your Origin",
+    "origin_placeholder": "Country or City...",
+    "mission_label": "Your Mission",
+    "mission_placeholder": "Why are you here?",
+    "mission_options": {
+      "student": "🎓 Academic Research",
+      "citizen": "🗳️ Civic Awareness",
+      "journalist": "📰 Political Analysis",
+      "policy": "🏛️ Policy & Governance"
+    },
+    "enter_button": "Enter the Verse"
+  },
+  "hub": {
+    "title": "Global Electoral Hub",
+    "subtitle": "Choose a system to explore its mechanics",
+    "voter_count": "Voters Online",
+    "active_missions": "Active Missions"
+  },
+  "systems": {
+    "fptp": "First-Past-The-Post",
+    "fptp_subhead": "The simplest rule: most votes wins. Even if that's 30%.",
+    "fptp_worksDesc": "One vote per person. Candidate with most votes wins. No minimum threshold needed. Constituency-based (geographic). Winner-takes-all.",
+    "fptp_shock": "🤯 In the 2005 UK election, Labour won a 66-seat majority with just 35.2% of the vote.",
+    "fptp_pros": [
+      "Simple to understand and count",
+      "Strong local representative accountability",
+      "Usually produces stable single-party governments",
+      "Quick results, clear winner"
+    ],
+    "fptp_cons": [
+      "Wasted votes — losing votes count for nothing",
+      "Can produce majority governments from minority votes",
+      "Discourages smaller parties (tactical voting)",
+      "Gerrymandering risk in constituency drawing"
+    ],
+    "fptp_examples": [
+      { "country": "UK 🇬🇧", "desc": "Britain invented FPTP. 650 constituencies. A party can win a majority of seats with just 35–40% of votes." },
+      { "country": "India 🇮🇳", "desc": "World's Largest. India uses FPTP for all 543 Lok Sabha seats. In 2019, BJP won 303 seats with 37.4% of the vote." },
+      { "country": "USA 🇺🇸", "desc": "US House elections use FPTP. 435 districts. Gerrymandering is a major criticism." }
+    ],
+
+    "pr": "Proportional Representation",
+    "pr_subhead": "Every vote counts. Your 15% becomes 15% of parliament.",
+    "pr_worksDesc": "Parties submit ranked lists of candidates. Voters vote for party, not person. Seats allocated proportionally. Used by Netherlands, Sweden, South Africa.",
+    "pr_shock": "🤯 Israel has had 5 elections in 4 years due to constant coalition collapses under extreme PR.",
+    "pr_pros": [
+      "Every vote has equal weight",
+      "Minority parties get fair representation",
+      "More women and minority MPs elected",
+      "Reflects true diversity of opinion"
+    ],
+    "pr_cons": [
+      "Often leads to coalition governments (slower, compromise-heavy)",
+      "Small extremist parties can gain seats",
+      "No direct local representative accountability",
+      "Voter influence over who gets elected is indirect"
+    ],
+    "pr_examples": [
+      { "country": "Netherlands 🇳🇱", "desc": "The entire country is ONE constituency. Any party with 0.67% of votes gets a seat." },
+      { "country": "Sweden 🇸🇪", "desc": "Uses PR with a 4% threshold to keep out fringe parties. Strong welfare state often linked to PR." },
+      { "country": "Israel 🇮🇱", "desc": "Extreme Case. PR is so proportional that small religious and nationalist parties hold enormous coalition leverage." }
+    ],
+
+    "two": "Two-Round System",
+    "two_subhead": "Round 1: Everyone competes. Round 2: The final duel.",
+    "two_worksDesc": "Multiple candidates shown. If anyone gets >50%, they win. Usually top 2 advance to Round 2. One MUST get majority (50%+1).",
+    "two_shock": "🤯 In 2002, France saw far-right Le Pen shock the nation by reaching Round 2, prompting massive tactical voting to defeat him 82% to 18%.",
+    "two_pros": [
+      "Winner always has majority (democratic legitimacy)",
+      "Allows voters to express first choice without 'wasting' vote",
+      "Extremists rarely win (majority rejects them in Round 2)",
+      "Clear, decisive outcome"
+    ],
+    "two_cons": [
+      "More expensive (two election days)",
+      "Voter fatigue and lower Round 2 turnout",
+      "Strategic voting still occurs in Round 1",
+      "2-week gap creates political uncertainty"
+    ],
+    "two_examples": [
+      { "country": "France 🇫🇷", "desc": "Uses two rounds for both Presidential and Legislative elections." },
+      { "country": "Brazil 🇧🇷", "desc": "Regularly goes to Round 2. In 2022, Lula vs Bolsonaro was won by just 1.8%." },
+      { "country": "Russia 🇷🇺", "desc": "Controversial Case. Uses a two-round system on paper but opposition faces restrictions." }
+    ],
+
+    "rcv": "Ranked Choice Voting",
+    "rcv_subhead": "Don't just pick one. Rank them all. 1, 2, 3...",
+    "rcv_worksDesc": "Count all first-choice votes. If someone has >50%, they win. If not, eliminate last-place candidate and redistribute their votes. Repeat until one crosses 50%.",
+    "rcv_shock": "🤯 Australians call it 'preferential voting'. Compulsory voting means 90%+ turnout.",
+    "rcv_pros": [
+      "No 'spoiler effect' — vote your conscience",
+      "Winners have broader support",
+      "Reduces negative campaigning",
+      "One election day (no runoff needed)"
+    ],
+    "rcv_cons": [
+      "Complex to understand and explain",
+      "Counting is slow (multiple rounds)",
+      "Can still produce anomalies (non-monotonicity paradox)",
+      "Long ballots intimidate some voters"
+    ],
+    "rcv_examples": [
+      { "country": "Australia 🇦🇺", "desc": "Used preferential voting for House of Representatives since 1918." },
+      { "country": "Ireland 🇮🇪", "desc": "Uses the Single Transferable Vote — a proportional version of RCV." },
+      { "country": "Alaska 🇺🇸", "desc": "Adopted RCV in 2020. Breaks the two-party stranglehold." }
+    ],
+
+    "mixed": "Mixed Member System",
+    "mixed_subhead": "The best of both worlds? Two votes. Two methods. One parliament.",
+    "mixed_worksDesc": "Vote 1: Individual candidate (FPTP). Vote 2: Party vote (PR) to top up seats to match national vote share.",
+    "mixed_shock": "🤯 Overhang seats caused the German Bundestag to grow to 736 seats in 2021.",
+    "mixed_pros": [
+      "Local representative + proportional fairness combined",
+      "Voters have two meaningful choices",
+      "Small parties can enter via list vote",
+      "More representative of national opinion"
+    ],
+    "mixed_cons": [
+      "Two classes of MPs (constituency vs list)",
+      "Complex — many voters don't understand both votes",
+      "Can create very large parliaments",
+      "Parties control list — removes some voter power"
+    ],
+    "mixed_examples": [
+      { "country": "Germany 🇩🇪", "desc": "Created Mixed Member Proportional after WWII to prevent extremist majorities." },
+      { "country": "New Zealand 🇳🇿", "desc": "Switched from FPTP to MMP in 1996. Result: more diverse parliament." },
+      { "country": "Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿", "desc": "Uses AMS (Additional Member System)." }
+    ],
+
+    "college": "Electoral College",
+    "college_subhead": "Sometimes the people vote for people who vote for the president.",
+    "college_worksDesc": "Citizens vote for Electors, not the President directly. Candidate needs majority of Electoral votes to win.",
+    "college_shock": "🤯 In the 2000 and 2016 US Elections, the winner of the popular vote lost the presidency.",
+    "college_pros": [
+      "Gives smaller states proportional voice",
+      "Encourages geographically diverse support",
+      "Clear winner — avoids nationwide recount chaos",
+      "Federalism — respects state sovereignty"
+    ],
+    "college_cons": [
+      "Popular vote winner can lose",
+      "Safe regions are essentially ignored in campaigns",
+      "Electors can theoretically vote against their state",
+      "Outdated — designed for pre-democracy era"
+    ],
+    "college_examples": [
+      { "country": "USA 🇺🇸", "desc": "Created in 1787. 538 electors. 48 states are winner-takes-all." },
+      { "country": "India 🇮🇳", "desc": "President is elected by an electoral college of all MPs and MLAs." },
+      { "country": "Vatican City 🇻🇦", "desc": "120 Cardinals elect the Pope. No campaigns allowed." }
+    ],
+
+    "direct": "Direct Democracy",
+    "direct_subhead": "No parliament. No representatives. The people vote on the law itself.",
+    "direct_worksDesc": "Referendum: Govt asks citizens to vote Yes/No. Initiative: Citizens gather signatures to force a public vote.",
+    "direct_shock": "🤯 Swiss citizens receive a massive booklet before every vote explaining all sides.",
+    "direct_pros": [
+      "Maximum democratic expression",
+      "Bypasses gridlocked parliaments",
+      "Citizens feel ownership of outcomes",
+      "Resolves issues politicians avoid"
+    ],
+    "direct_cons": [
+      "Susceptible to misinformation campaigns",
+      "Majority can oppress minority rights",
+      "Complex issues reduced to Yes/No",
+      "Low-information voters decide specialist questions"
+    ],
+    "direct_examples": [
+      { "country": "Switzerland 🇨🇭", "desc": "The Global Leader. Holds 4 national referendums per year." },
+      { "country": "UK 🇬🇧", "desc": "The 2016 Brexit referendum reshaped Europe." },
+      { "country": "California 🇺🇸", "desc": "Allows citizens to place laws directly on the ballot." }
+    ],
+
+    "appointed": "Appointed/Single Party",
+    "appointed_subhead": "When There Is No Election. Power flows from institution.",
+    "appointed_worksDesc": "Absolute Monarchy, One-Party State, Military Junta, or Theocracy. Power is inherited, seized, or held by a single entity.",
+    "appointed_shock": "🤯 In Myanmar (2021), the military rejected the election results and seized power.",
+    "appointed_pros": [
+      "Stability and long-term planning",
+      "Meritocracy over popularity",
+      "Cultural/religious alignment for some"
+    ],
+    "appointed_cons": [
+      "No accountability — leaders serve themselves",
+      "Human rights abuses with no consequence",
+      "No peaceful transfer of power",
+      "Corruption without transparency"
+    ],
+    "appointed_examples": [
+      { "country": "China 🇨🇳", "desc": "One Party Elections. Only Communist Party candidates can run." },
+      { "country": "Saudi Arabia 🇸🇦", "desc": "Absolute monarchy — the King rules by Islamic law." },
+      { "country": "Iran 🇮🇷", "desc": "Hybrid Theocracy. Unelected Supreme Leader has ultimate authority." }
+    ]
+  },
+  "system_view": {
+    "how_it_works": "How It Works",
+    "world_examples": "World Examples",
+    "tradeoffs": "The Trade-offs",
+    "pros": "The Arguments For",
+    "cons": "The Criticisms"
+  },
+  "comparison": {
+    "title": "Global Comparison",
+    "subtitle": "No perfect system exists. Every democracy is a compromise.",
+    "table": {
+      "system": "System",
+      "fairness": "Fairness",
+      "stability": "Stability",
+      "simplicity": "Simplicity",
+      "local_rep": "Local Rep",
+      "countries": "Countries"
+    }
+  },
+  "quiz": {
+    "hero_title": "Which System Suits Your Values?",
+    "questions": {
+      "q1": "How important is it that every vote counts equally?",
+      "q2": "Should elections always produce stable single-party governments?",
+      "q3": "Should local areas have a dedicated representative in parliament?",
+      "q4": "Is it okay if a party wins power with less than 40% of votes?",
+      "q5": "Should citizens be able to directly vote on laws and referendums?",
+      "q6": "Is it important that small parties can enter parliament?",
+      "q7": "Should the winner always have 50%+ support to govern?",
+      "q8": "Is simplicity of counting more important than mathematical fairness?"
+    },
+    "disagree": "Disagree",
+    "agree": "Agree",
+    "reveal_button": "Reveal My Ideal System →",
+    "align_text": "Your Values Align With:",
+    "score": "Your Score",
+    "restart": "Retake Quiz",
+    "congrats": "Congratulations!"
+  },
+  "countries": {
+    "uk": "UK",
+    "in": "India",
+    "us": "USA",
+    "ca": "Canada",
+    "ng": "Nigeria",
+    "gh": "Ghana",
+    "ke": "Kenya",
+    "my": "Malaysia",
+    "nl": "Netherlands",
+    "se": "Sweden",
+    "za": "South Africa",
+    "be": "Belgium",
+    "fi": "Finland",
+    "dk": "Denmark",
+    "no": "Norway",
+    "il": "Israel",
+    "es": "Spain",
+    "fr": "France",
+    "br": "Brazil",
+    "ru": "Russia",
+    "eg": "Egypt",
+    "tr": "Turkey",
+    "ir": "Iran",
+    "co": "Colombia",
+    "pl": "Poland",
+    "au": "Australia",
+    "ie": "Ireland",
+    "nz": "New Zealand",
+    "mt": "Malta",
+    "pg": "Papua New Guinea",
+    "de": "Germany",
+    "jp": "Japan",
+    "kr": "South Korea",
+    "it": "Italy",
+    "mx": "Mexico",
+    "hu": "Hungary",
+    "th": "Thailand",
+    "pk": "Pakistan",
+    "mm": "Myanmar",
+    "ch": "Switzerland",
+    "is": "Iceland",
+    "uy": "Uruguay",
+    "tw": "Taiwan",
+    "sa": "Saudi Arabia",
+    "cn": "China",
+    "va": "Vatican City",
+    "ae": "UAE",
+    "qa": "Qatar",
+    "bn": "Brunei",
+    "kp": "North Korea",
+    "om": "Oman",
+    "other": "Other"
+  }
+}

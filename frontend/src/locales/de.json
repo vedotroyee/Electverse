@@ -1,0 +1,304 @@
+{
+  "common": {
+    "app_name": "ElectVerse",
+    "compare": "Vergleichen",
+    "take_quiz": "Quiz machen",
+    "back_to_hub": "Zurück zum Hub",
+    "loading": "Laden...",
+    "error": "Fehler aufgetreten",
+    "subtitle": "Demokratie weltweit entschlüsseln",
+    "click_to_enter": "Klicken, um fortzufahren",
+    "choose_language": "WÄHLEN SIE IHRE MISSIONSSPRACHE"
+  },
+  "login": {
+    "welcome": "Willkommen bei ElectVerse",
+    "subtitle": "Ihr Portal zum Verständnis globaler Wahlsysteme.",
+    "identity_label": "Identifizieren Sie sich",
+    "identity_placeholder": "Name eingeben...",
+    "origin_label": "Herkunft",
+    "origin_placeholder": "Land oder Stadt...",
+    "mission_label": "Ihre Mission",
+    "mission_placeholder": "Warum sind Sie hier?",
+    "mission_options": {
+      "student": "🎓 Akademische Forschung",
+      "citizen": "🗳️ Politisches Bewusstsein",
+      "journalist": "📰 Politische Analyse",
+      "policy": "🏛️ Politik & Governance"
+    },
+    "enter_button": "Eintritt in das Versum"
+  },
+  "hub": {
+    "title": "Globaler Wahl-Hub",
+    "subtitle": "Wählen Sie ein System, um seine Mechanik zu erkunden",
+    "voter_count": "Wähler online",
+    "active_missions": "Aktive Missionen"
+  },
+  "systems": {
+    "fptp": "Mehrheitswahlrecht (FPTP)",
+    "fptp_subhead": "Die einfachste Regel: Wer die meisten Stimmen hat, gewinnt. Sogar mit 30%.",
+    "fptp_worksDesc": "Eine Stimme pro Person. Kandidat mit den meisten Stimmen gewinnt. Keine Mindesthürde erforderlich. Wahlkreisbasiert. Mehrheitsprinzip.",
+    "fptp_shock": "🤯 Bei der Wahl im Vereinigten Königreich 2005 gewann Labour eine Mehrheit von 66 Sitzen mit nur 35,2% der Stimmen.",
+    "fptp_pros": [
+      "Leicht zu verstehen und auszuzählen",
+      "Starke Rechenschaftspflicht der lokalen Vertreter",
+      "Erzeugt meist stabile Einparteienregierungen",
+      "Schnelle Ergebnisse, klarer Sieger"
+    ],
+    "fptp_cons": [
+      "Verlorene Stimmen — Stimmen für Verlierer zählen gar nicht",
+      "Kann Mehrheitsregierungen durch Minderheitenstimmen erzeugen",
+      "Benachteiligt kleinere Parteien (taktisches Wählen)",
+      "Gerrymandering-Risiko bei der Wahlkreisziehung"
+    ],
+    "fptp_examples": [
+      { "country": "Großbritannien 🇬🇧", "desc": "Briten erfanden FPTP. 650 Wahlkreise." },
+      { "country": "Indien 🇮🇳", "desc": "Größte Demokratie. Indien nutzt FPTP für alle 543 Lok Sabha Sitze." },
+      { "country": "USA 🇺🇸", "desc": "US-Repräsentantenhaus nutzt FPTP. 435 Distrikte." }
+    ],
+
+    "pr": "Verhältniswahlrecht (PR)",
+    "pr_subhead": "Jede Stimme zählt. Ihre 15% werden zu 15% der Parlamentssitze.",
+    "pr_worksDesc": "Parteien reichen geordnete Listen ein. Wähler wählen die Partei, nicht die Person. Sitze werden proportional vergeben.",
+    "pr_shock": "🤯 Israel hatte 5 Wahlen in 4 Jahren wegen ständiger Koalitionszusammenbrüche unter extremem PR.",
+    "pr_pros": [
+      "Jede Stimme hat das gleiche Gewicht",
+      "Minderheitenparteien erhalten faire Repräsentation",
+      "Mehr Frauen und Minderheitenabgeordnete werden gewählt",
+      "Spiegelt die wahre Meinungsvielfalt wider"
+    ],
+    "pr_cons": [
+      "Führt oft zu Koalitionsregierungen (langsamer, kompromisslastig)",
+      "Kleine extremistische Parteien können Sitze gewinnen",
+      "Keine direkte Rechenschaftspflicht lokaler Vertreter",
+      "Einfluss der Wähler auf die Personenwahl ist indirekt"
+    ],
+    "pr_examples": [
+      { "country": "Niederlande 🇳🇱", "desc": "Das ganze Land ist EIN Wahlkreis. Jede Partei mit 0,67% der Stimmen erhält einen Sitz." },
+      { "country": "Schweden 🇸🇪", "desc": "Nutzt PR mit einer 4%-Hürde, um Randparteien auszuschließen." },
+      { "country": "Israel 🇮🇱", "desc": "Extremfall. PR ist so proportional, dass kleine religiöse Parteien enorme Macht haben." }
+    ],
+
+    "two": "Zwei-Runden-System",
+    "two_subhead": "Runde 1: Alle treten an. Runde 2: Das finale Duell.",
+    "two_worksDesc": "Mehrere Kandidaten treten an. Wer >50% hat, gewinnt. Meist kommen die Top 2 in Runde 2. Einer MUSS die Mehrheit (50%+1) erhalten.",
+    "two_shock": "🤯 2002 schockierte der Rechtsextreme Le Pen Frankreich, indem er Runde 2 erreichte, was zu massivem taktischem Wählen gegen ihn führte (82% zu 18%).",
+    "two_pros": [
+      "Sieger hat immer die Mehrheit (demokratische Legitimität)",
+      "Wähler können Erststimme geben, ohne sie zu 'verschwenden'",
+      "Extremisten gewinnen selten (Mehrheit lehnt sie in Runde 2 ab)",
+      "Klares, entscheidendes Ergebnis"
+    ],
+    "two_cons": [
+      "Teurer (zwei Wahltage)",
+      "Wählermüdigkeit und niedrigere Beteiligung in Runde 2",
+      "Strategisches Wählen findet schon in Runde 1 statt",
+      "2-Wochen-Lücke schafft politische Unsicherheit"
+    ],
+    "two_examples": [
+      { "country": "Frankreich 🇫🇷", "desc": "Nutzt zwei Runden für Präsidenten- und Parlamentswahlen." },
+      { "country": "Brasilien 🇧🇷", "desc": "Regelmäßige Stichwahlen. 2022 gewann Lula gegen Bolsonaro mit nur 1,8% Vorsprung." },
+      { "country": "Russland 🇷🇺", "desc": "Umstrittener Fall. Nutzt auf dem Papier zwei Runden, Opposition wird aber stark eingeschränkt." }
+    ],
+
+    "rcv": "Rangfolgewahl (RCV)",
+    "rcv_subhead": "Nicht nur einen wählen. Alle ordnen. 1, 2, 3...",
+    "rcv_worksDesc": "Alle Erststimmen zählen. Wer >50% hat, gewinnt. Wenn nicht, fliegt der Letzte raus und seine Stimmen werden neu verteilt. Wiederholen, bis einer 50% knackt.",
+    "rcv_shock": "🤯 Australier nennen es 'preferential voting'. Wahlpflicht bedeutet 90%+ Beteiligung.",
+    "rcv_pros": [
+      "Kein 'Spoiler-Effekt' — wählen Sie nach Gewissen",
+      "Sieger haben breitere Unterstützung",
+      "Reduziert negativen Wahlkampf",
+      "Nur ein Wahltag nötig"
+    ],
+    "rcv_cons": [
+      "Komplex zu verstehen und zu erklären",
+      "Auszählung ist langsam (mehrere Runden)",
+      "Kann immer noch Anomalien erzeugen",
+      "Lange Stimmzettel schrecken manche Wähler ab"
+    ],
+    "rcv_examples": [
+      { "country": "Australien 🇦🇺", "desc": "Nutzt Vorzugswahl für das Repräsentantenhaus seit 1918." },
+      { "country": "Irland 🇮🇪", "desc": "Nutzt die übertragbare Einzelstimmgebung — eine PR-Version von RCV." },
+      { "country": "Alaska 🇺🇸", "desc": "Führte RCV 2020 ein. Bricht die Dominanz der zwei großen Parteien." }
+    ],
+
+    "mixed": "Gemischte Systeme",
+    "mixed_subhead": "Das Beste aus beiden Welten? Zwei Stimmen. Zwei Methoden. Ein Parlament.",
+    "mixed_worksDesc": "Stimme 1: Direktkandidat (FPTP). Stimme 2: Parteistimme (PR) zur Auffüllung der Sitze gemäß dem nationalen Stimmenanteil.",
+    "mixed_shock": "🤯 Überhangmandate ließen den deutschen Bundestag 2021 auf 736 Sitze anwachsen.",
+    "mixed_pros": [
+      "Lokaler Vertreter + proportionale Fairness kombiniert",
+      "Wähler haben zwei bedeutungsvolle Entscheidungen",
+      "Kleine Parteien können über Listenstimme einziehen",
+      "Repräsentativer für die nationale Meinung"
+    ],
+    "mixed_cons": [
+      "Zwei Klassen von Abgeordneten (Direkt vs. Liste)",
+      "Komplex — viele Wähler verstehen den Unterschied nicht",
+      "Kann sehr große Parlamente erzeugen",
+      "Parteien kontrollieren die Liste"
+    ],
+    "mixed_examples": [
+      { "country": "Deutschland 🇩🇪", "desc": "Nach dem 2. Weltkrieg eingeführt, um extremistische Mehrheiten zu verhindern." },
+      { "country": "Neuseeland 🇳🇿", "desc": "Wechselte 1996 von FPTP zu MMP. Ergebnis: vielfältigeres Parlament." },
+      { "country": "Schottland 🏴󠁧󠁢󠁳󠁣󠁴󠁿", "desc": "Nutzt AMS (Additional Member System)." }
+    ],
+
+    "college": "Wahlmännergremium (Electoral College)",
+    "college_subhead": "Manchmal wählen die Leute Leute, die den Präsidenten wählen.",
+    "college_worksDesc": "Bürger wählen Wahlmänner, nicht den Präsidenten direkt. Kandidat braucht Mehrheit der Wahlmännerstimmen zum Sieg.",
+    "college_shock": "🤯 Bei den US-Wahlen 2000 und 2016 verlor der Gewinner der Volksstimme die Präsidentschaft.",
+    "college_pros": [
+      "Gibt kleineren Staaten eine proportionale Stimme",
+      "Fördert Koalitionen geografisch vielfältiger Unterstützung",
+      "Klarer Sieger — vermeidet landesweites Neuauszählungschaos",
+      "Föderalismus — respektiert die Souveränität der Bundesstaaten"
+    ],
+    "college_cons": [
+      "Sieger der Volksstimme kann verlieren",
+      "Sichere Regionen werden im Wahlkampf ignoriert",
+      "Wahlmänner können theoretisch gegen ihr Land stimmen",
+      "Veraltet — für die Zeit vor der Demokratie entworfen"
+    ],
+    "college_examples": [
+      { "country": "USA 🇺🇸", "desc": "1787 geschaffen. 538 Wahlmänner. 48 Staaten nach dem 'Winner-takes-all'-Prinzip." },
+      { "country": "Indien 🇮🇳", "desc": "Präsident wird von einem Gremium aus allen Abgeordneten gewählt." },
+      { "country": "Vatikanstadt 🇻🇦", "desc": "120 Kardinäle wählen den Papst. Kein Wahlkampf erlaubt." }
+    ],
+
+    "direct": "Direkte Demokratie",
+    "direct_subhead": "Kein Parlament. Keine Vertreter. Das Volk stimmt über das Gesetz selbst ab.",
+    "direct_worksDesc": "Referendum: Regierung fragt Bürger Ja/Nein. Initiative: Bürger sammeln Unterschriften für Volksabstimmung.",
+    "direct_shock": "🤯 Schweizer Bürger erhalten vor jeder Wahl ein massives Heft, das alle Seiten neutral erklärt.",
+    "direct_pros": [
+      "Maximaler demokratischer Ausdruck",
+      "Umgeht blockierte Parlamente",
+      "Bürger fühlen sich für Ergebnisse verantwortlich",
+      "Löst Themen, die Politiker vermeiden"
+    ],
+    "direct_cons": [
+      "Anfällig für Desinformationskampagnen",
+      "Mehrheit kann Minderheitenrechte unterdrücken",
+      "Komplexe Themen auf Ja/Nein reduziert",
+      "Schlecht informierte Wähler entscheiden Fachfragen"
+    ],
+    "direct_examples": [
+      { "country": "Schweiz 🇨🇭", "desc": "Globaler Spitzenreiter. Hält 4 nationale Referenden pro Jahr." },
+      { "country": "Großbritannien 🇬🇧", "desc": "Das Brexit-Referendum 2016 gestaltete Europa neu." },
+      { "country": "Kalifornien 🇺🇸", "desc": "Erlaubt Bürgern, Gesetze direkt auf den Stimmzettel zu bringen." }
+    ],
+
+    "appointed": "Ernannt/Einparteiensystem",
+    "appointed_subhead": "Wenn es keine Wahl gibt. Macht fließt von der Institution.",
+    "appointed_worksDesc": "Absolute Monarchie, Einparteienstaat, Militärjunta oder Theokratie. Macht wird vererbt, ergriffen oder von einer Einheit gehalten.",
+    "appointed_shock": "🤯 In Myanmar (2021) lehnte das Militär die Wahlergebnisse einfach ab und ergriff die Macht.",
+    "appointed_pros": [
+      "Stabilität und langfristige Planung",
+      "Leistungsgesellschaft über Popularität",
+      "Kulturelle/religiöse Ausrichtung für manche Gesellschaften"
+    ],
+    "appointed_cons": [
+      "Keine Rechenschaftspflicht — Führer dienen sich selbst",
+      "Menschenrechtsverletzungen ohne Wahlkonsequenzen",
+      "Kein friedlicher Machtwechsel",
+      "Korruption ohne Transparenz"
+    ],
+    "appointed_examples": [
+      { "country": "China 🇨🇳", "desc": "Einparteienwahlen. Nur Kandidaten der Kommunistischen Partei dürfen antreten." },
+      { "country": "Saudi-Arabien 🇸🇦", "desc": "Absolute Monarchie — der König herrscht nach islamischem Recht. Keine nationalen Wahlen." },
+      { "country": "Iran 🇮🇷", "desc": "Hybride Theokratie. Nicht gewählter Oberster Führer hat die letzte Autorität." }
+    ]
+  },
+  "system_view": {
+    "how_it_works": "Wie es funktioniert",
+    "world_examples": "Weltweite Beispiele",
+    "tradeoffs": "Die Abwägungen",
+    "pros": "Argumente dafür",
+    "cons": "Die Kritikpunkte"
+  },
+  "comparison": {
+    "title": "Globaler Vergleich",
+    "subtitle": "Kein System ist perfekt. Jede Demokratie ist ein Kompromiss.",
+    "table": {
+      "system": "System",
+      "fairness": "Fairness",
+      "stability": "Stabilität",
+      "simplicity": "Einfachheit",
+      "local_rep": "Lokale Rep.",
+      "countries": "Länder"
+    }
+  },
+  "quiz": {
+    "hero_title": "Welches System passt zu Ihren Werten?",
+    "questions": {
+      "q1": "Wie wichtig ist es, dass jede Stimme gleich zählt?",
+      "q2": "Sollten Wahlen immer stabile Einparteienregierungen hervorbringen?",
+      "q3": "Sollten lokale Gebiete einen eigenen Vertreter im Parlament haben?",
+      "q4": "Ist es okay, wenn eine Partei mit weniger als 40% der Stimmen die Macht gewinnt?",
+      "q5": "Sollten Bürger direkt über Gesetze und Referenden abstimmen können?",
+      "q6": "Ist es wichtig, dass kleine Parteien ins Parlament einziehen können?",
+      "q7": "Sollte der Sieger immer 50%+ Unterstützung haben, um zu regieren?",
+      "q8": "Ist die Einfachheit der Auszählung wichtiger als mathematische Fairness?"
+    },
+    "disagree": "Ablehnen",
+    "agree": "Zustimmen",
+    "reveal_button": "Mein ideales System enthüllen →",
+    "align_text": "Ihre Werte passen zu:",
+    "score": "Ihre Punktzahl",
+    "restart": "Quiz wiederholen",
+    "congrats": "Herzlichen Glückwunsch!"
+  },
+  "countries": {
+    "uk": "Großbritannien",
+    "in": "Indien",
+    "us": "USA",
+    "ca": "Kanada",
+    "ng": "Nigeria",
+    "gh": "Ghana",
+    "ke": "Kenia",
+    "my": "Malaysia",
+    "nl": "Niederlande",
+    "se": "Schweden",
+    "za": "Südafrika",
+    "be": "Belgien",
+    "fi": "Finnland",
+    "dk": "Dänemark",
+    "no": "Norwegen",
+    "il": "Israel",
+    "es": "Spanien",
+    "fr": "Frankreich",
+    "br": "Brasilien",
+    "ru": "Russland",
+    "eg": "Ägypten",
+    "tr": "Türkei",
+    "ir": "Iran",
+    "co": "Kolumbien",
+    "pl": "Polen",
+    "au": "Australien",
+    "ie": "Irland",
+    "nz": "Neuseeland",
+    "mt": "Malta",
+    "pg": "Papua-Neuguinea",
+    "de": "Deutschland",
+    "jp": "Japan",
+    "kr": "Südkorea",
+    "it": "Italien",
+    "mx": "Mexiko",
+    "hu": "Ungarn",
+    "th": "Thailand",
+    "pk": "Pakistan",
+    "mm": "Myanmar",
+    "ch": "Schweiz",
+    "is": "Island",
+    "uy": "Uruguay",
+    "tw": "Taiwan",
+    "sa": "Saudi-Arabien",
+    "cn": "China",
+    "va": "Vatikanstadt",
+    "ae": "VAE",
+    "qa": "Katar",
+    "bn": "Brunei",
+    "kp": "Nordkorea",
+    "om": "Oman"
+  }
+}

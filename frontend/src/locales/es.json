@@ -1,0 +1,304 @@
+{
+  "common": {
+    "app_name": "ElectVerse",
+    "compare": "Comparar",
+    "take_quiz": "Hacer el cuestionario",
+    "back_to_hub": "Volver al Hub",
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "subtitle": "Descifrando la democracia en todo el mundo",
+    "click_to_enter": "Haz clic en cualquier lugar para entrar",
+    "choose_language": "SELECCIONA TU IDIOMA DE MISIÓN"
+  },
+  "login": {
+    "welcome": "Bienvenido a ElectVerse",
+    "subtitle": "Tu portal para entender los sistemas electorales globales.",
+    "identity_label": "Identifícate",
+    "identity_placeholder": "Introduce tu nombre...",
+    "origin_label": "Tu origen",
+    "origin_placeholder": "País o ciudad...",
+    "mission_label": "Tu misión",
+    "mission_placeholder": "¿Por qué estás aquí?",
+    "mission_options": {
+      "student": "🎓 Investigación académica",
+      "citizen": "🗳️ Conciencia cívica",
+      "journalist": "📰 Análisis político",
+      "policy": "🏛️ Política y gobernanza"
+    },
+    "enter_button": "Entrar al Verso"
+  },
+  "hub": {
+    "title": "Centro Electoral Global",
+    "subtitle": "Elige un sistema para explorar su mecánica",
+    "voter_count": "Votantes en línea",
+    "active_missions": "Misiones activas"
+  },
+  "systems": {
+    "fptp": "Escrutinio mayoritario uninominal",
+    "fptp_subhead": "La regla más simple: el que tiene más votos gana. Incluso si es el 30%.",
+    "fptp_worksDesc": "Un voto por persona. El candidato con más votos gana. No se necesita un umbral mínimo. Basado en distritos electorales (geográficos). El ganador se lo lleva todo.",
+    "fptp_shock": "🤯 En las elecciones del Reino Unido de 2005, el Partido Laborista ganó una mayoría de 66 escaños con solo el 35,2% de los votos.",
+    "fptp_pros": [
+      "Fácil de entender y contar",
+      "Fuerte responsabilidad del representante local",
+      "Suele producir gobiernos estables de un solo partido",
+      "Resultados rápidos, ganador claro"
+    ],
+    "fptp_cons": [
+      "Votos desperdiciados: los votos de los perdedores no cuentan para nada",
+      "Puede producir gobiernos mayoritarios a partir de votos minoritarios",
+      "Desalienta a los partidos más pequeños (voto táctico)",
+      "Riesgo de manipulación (gerrymandering) en el trazado de distritos"
+    ],
+    "fptp_examples": [
+      { "country": "Reino Unido 🇬🇧", "desc": "Gran Bretaña inventó el FPTP. 650 distritos electorales." },
+      { "country": "India 🇮🇳", "desc": "La democracia más grande del mundo. India usa FPTP para los 543 escaños de Lok Sabha." },
+      { "country": "EE. UU. 🇺🇸", "desc": "Las elecciones a la Cámara de Representantes de EE. UU. usan FPTP. 435 distritos." }
+    ],
+
+    "pr": "Representación Proporcional",
+    "pr_subhead": "Cada voto cuenta. Tu 15% se convierte en el 15% del parlamento.",
+    "pr_worksDesc": "Los partidos presentan listas ordenadas de candidatos. Los votantes votan por el partido, no por la persona. Los escaños se asignan proporcionalmente.",
+    "pr_shock": "🤯 Israel ha tenido 5 elecciones en 4 años debido a los constantes colapsos de las coaliciones bajo una RP extrema.",
+    "pr_pros": [
+      "Cada voto tiene el mismo peso",
+      "Los partidos minoritarios obtienen una representación justa",
+      "Se eligen más mujeres y parlamentarios de minorías",
+      "Refleja la verdadera diversidad de opinión"
+    ],
+    "pr_cons": [
+      "A menudo conduce a gobiernos de coalición (más lentos, basados en compromisos)",
+      "Los pequeños partidos extremistas pueden obtener escaños",
+      "No hay responsabilidad directa del representante local",
+      "La influencia del votante sobre quién es elegido es indirecta"
+    ],
+    "pr_examples": [
+      { "country": "Países Bajos 🇳🇱", "desc": "Todo el país es UN solo distrito electoral. Cualquier partido con el 0,67% de los votos obtiene un escaño." },
+      { "country": "Suecia 🇸🇪", "desc": "Usa RP con un umbral del 4% para mantener fuera a los partidos marginales." },
+      { "country": "Israel 🇮🇱", "desc": "Caso extremo. La RP es tan proporcional que los pequeños partidos religiosos y nacionalistas tienen un enorme poder de coalición." }
+    ],
+
+    "two": "Sistema de dos vueltas",
+    "two_subhead": "Ronda 1: Todos compiten. Ronda 2: El duelo final.",
+    "two_worksDesc": "Se presentan varios candidatos. Si alguien obtiene más del 50%, gana. Normalmente, los 2 mejores avanzan a la Ronda 2. Uno DEBE obtener la mayoría (50%+1).",
+    "two_shock": "🤯 En 2002, en Francia, el ultraderechista Le Pen sorprendió a la nación al llegar a la segunda vuelta, lo que provocó un voto táctico masivo para derrotarlo por 82% a 18%.",
+    "two_pros": [
+      "El ganador siempre tiene la mayoría (legitimidad democrática)",
+      "Permite a los votantes expresar su primera opción sin 'desperdiciar' el voto",
+      "Los extremistas rara vez ganan (la mayoría los rechaza en la segunda vuelta)",
+      "Resultado claro y decisivo"
+    ],
+    "two_cons": [
+      "Más caro (dos días de elecciones)",
+      "Fatiga del votante y menor participación en la segunda vuelta",
+      "El voto estratégico todavía ocurre en la primera ronda",
+      "La brecha de 2 semanas crea incertidumbre política"
+    ],
+    "two_examples": [
+      { "country": "Francia 🇫🇷", "desc": "Utiliza dos vueltas tanto para las elecciones presidenciales como para las legislativas." },
+      { "country": "Brasil 🇧🇷", "desc": "Regularmente va a la segunda vuelta. En 2022, Lula vs. Bolsonaro se ganó por solo un 1,8%." },
+      { "country": "Rusia 🇷🇺", "desc": "Caso controvertido. Utiliza un sistema de dos vueltas sobre el papel, pero la oposición se enfrenta a restricciones." }
+    ],
+
+    "rcv": "Voto por orden de preferencia (RCV)",
+    "rcv_subhead": "No elijas solo uno. Clasifícalos a todos. 1, 2, 3...",
+    "rcv_worksDesc": "Se cuentan todos los votos de primera opción. Si alguien tiene más del 50%, gana. Si no, se elimina al candidato del último lugar y se redistribuyen sus votos.",
+    "rcv_shock": "🤯 Los australianos lo llaman 'voto preferencial'. El voto obligatorio significa una participación de más del 90%.",
+    "rcv_pros": [
+      "Sin 'efecto spoiler': vota a conciencia",
+      "Los ganadores tienen un apoyo más amplio",
+      "Reduce las campañas negativas",
+      "Un solo día de elecciones"
+    ],
+    "rcv_cons": [
+      "Complejo de entender y explicar",
+      "El recuento es lento (múltiples rondas)",
+      "Todavía puede producir anomalías",
+      "Las papeletas largas intimidan a algunos votantes"
+    ],
+    "rcv_examples": [
+      { "country": "Australia 🇦🇺", "desc": "Se utiliza el voto preferencial para la Cámara de Representantes desde 1918." },
+      { "country": "Irlanda 🇮🇪", "desc": "Utiliza el Voto Único Transferible, una versión proporcional del RCV." },
+      { "country": "Alaska 🇺🇸", "desc": "Adoptó el RCV en 2020. Rompe el dominio de los dos partidos principales." }
+    ],
+
+    "mixed": "Sistemas de miembros mixtos",
+    "mixed_subhead": "¿Lo mejor de ambos mundos? Dos votos. Dos métodos. Un parlamento.",
+    "mixed_worksDesc": "Voto 1: Candidato individual (FPTP). Voto 2: Voto por partido (RP) para completar los escaños de modo que coincidan con la cuota de votos nacional.",
+    "mixed_shock": "🤯 Los escaños excedentes hicieron que el Bundestag alemán creciera hasta los 736 escaños en 2021.",
+    "mixed_pros": [
+      "Representante local + equidad proporcional combinados",
+      "Los votantes tienen dos opciones significativas",
+      "Los partidos pequeños pueden entrar a través del voto por lista",
+      "Más representativo de la opinión nacional"
+    ],
+    "mixed_cons": [
+      "Dos clases de parlamentarios (distrito vs. lista)",
+      "Complejo: muchos votantes no entienden ambos votos",
+      "Puede crear parlamentos muy grandes",
+      "Los partidos controlan la lista"
+    ],
+    "mixed_examples": [
+      { "country": "Alemania 🇩🇪", "desc": "Se creó la Proporcional de Miembros Mixtos después de la Segunda Guerra Mundial para evitar mayorías extremistas." },
+      { "country": "Nueva Zelanda 🇳🇿", "desc": "Cambió de FPTP a MMP en 1996. Resultado: un parlamento más diverso." },
+      { "country": "Escocia 🏴󠁧󠁢󠁳󠁣󠁴󠁿", "desc": "Utiliza el AMS (Sistema de Miembros Adicionales)." }
+    ],
+
+    "college": "Colegio Electoral",
+    "college_subhead": "A veces la gente vota por personas que votan por el presidente.",
+    "college_worksDesc": "Los ciudadanos votan por los electores, no por el presidente directamente. El candidato necesita la mayoría de los votos electorales para ganar.",
+    "college_shock": "🤯 En las elecciones de EE. UU. de 2000 y 2016, el ganador del voto popular perdió la presidencia.",
+    "college_pros": [
+      "Da voz proporcional a los estados más pequeños",
+      "Fomenta una coalición de apoyo geográficamente diverso",
+      "Ganador claro: evita el caos de un recuento nacional",
+      "Federalismo: respeta la soberanía estatal"
+    ],
+    "college_cons": [
+      "El ganador del voto popular puede perder",
+      "Las regiones seguras son esencialmente ignoradas en las campañas",
+      "Los electores teóricamente pueden votar contra su estado",
+      "Obsoleto: diseñado para la era previa a la democracia"
+    ],
+    "college_examples": [
+      { "country": "EE. UU. 🇺🇸", "desc": "Creado en 1787. 538 electores. 48 estados otorgan todo al ganador." },
+      { "country": "India 🇮🇳", "desc": "El presidente es elegido por un colegio electoral de todos los parlamentarios y miembros de asambleas legislativas." },
+      { "country": "Ciudad del Vaticano 🇻🇦", "desc": "120 cardenales eligen al Papa. No se permiten campañas." }
+    ],
+
+    "direct": "Democracia Directa",
+    "direct_subhead": "Sin parlamento. Sin representantes. El pueblo vota la ley en sí misma.",
+    "direct_worksDesc": "Referéndum: El gobierno pide a los ciudadanos votar Sí/No. Iniciativa: Los ciudadanos recogen firmas para forzar una votación pública.",
+    "direct_shock": "🤯 Los ciudadanos suizos reciben un folleto masivo antes de cada votación que explica neutralmente todos los lados.",
+    "direct_pros": [
+      "Máxima expresión democrática",
+      "Evita los parlamentos bloqueados",
+      "Los ciudadanos sienten la propiedad de los resultados",
+      "Resuelve problemas que los políticos evitan"
+    ],
+    "direct_cons": [
+      "Susceptible a campañas de desinformación",
+      "La mayoría puede oprimir los derechos de las minorías",
+      "Los problemas complejos se reducen a Sí/No",
+      "Votantes con poca información deciden cuestiones especializadas"
+    ],
+    "direct_examples": [
+      { "country": "Suiza 🇨🇭", "desc": "El líder mundial. Celebra 4 referéndums nacionales al año." },
+      { "country": "Reino Unido 🇬🇧", "desc": "El referéndum del Brexit de 2016 remodeló Europa." },
+      { "country": "California 🇺🇸", "desc": "Permite a los ciudadanos proponer leyes directamente en la papeleta." }
+    ],
+
+    "appointed": "Designación/Partido Único",
+    "appointed_subhead": "Cuando no hay elecciones. El poder fluye de la institución.",
+    "appointed_worksDesc": "Monarquía absoluta, Estado de partido único, junta militar o teocracia. El poder se hereda, se toma por la fuerza o es ejercido por una sola entidad.",
+    "appointed_shock": "🤯 En Myanmar (2021), los militares rechazaron los resultados electorales y tomaron el poder.",
+    "appointed_pros": [
+      "Estabilidad y planificación a largo plazo",
+      "Meritocracia sobre popularidad",
+      "Alineación cultural/religiosa para algunos"
+    ],
+    "appointed_cons": [
+      "Sin rendición de cuentas: los líderes se sirven a sí mismos",
+      "Abusos de los derechos humanos sin consecuencia electoral",
+      "Sin transferencia pacífica del poder",
+      "Corrupción sin transparencia"
+    ],
+    "appointed_examples": [
+      { "country": "China 🇨🇳", "desc": "Elecciones de partido único. Solo los candidatos del Partido Comunista pueden presentarse." },
+      { "country": "Arabia Saudita 🇸🇦", "desc": "Monarquía absoluta: el Rey gobierna por la ley islámica. No existen elecciones nacionales." },
+      { "country": "Irán 🇮🇷", "desc": "Teocracia híbrida. El Líder Supremo no elegido tiene la autoridad máxima." }
+    ]
+  },
+  "system_view": {
+    "how_it_works": "Cómo funciona",
+    "world_examples": "Ejemplos mundiales",
+    "tradeoffs": "Los pros y contras",
+    "pros": "Argumentos a favor",
+    "cons": "Las críticas"
+  },
+  "comparison": {
+    "title": "Comparativa Global",
+    "subtitle": "No existe el sistema perfecto. Toda democracia es un compromiso.",
+    "table": {
+      "system": "Sistema",
+      "fairness": "Equidad",
+      "stability": "Estabilidad",
+      "simplicity": "Simplicidad",
+      "local_rep": "Rep. Local",
+      "countries": "Países"
+    }
+  },
+  "quiz": {
+    "hero_title": "¿Qué sistema se adapta a tus valores?",
+    "questions": {
+      "q1": "¿Qué importancia tiene que cada voto cuente por igual?",
+      "q2": "¿Deben las elecciones producir siempre gobiernos estables de un solo partido?",
+      "q3": "¿Deben las áreas locales tener un representante dedicado en el parlamento?",
+      "q4": "¿Está bien si un partido gana el poder con menos del 40% de los votos?",
+      "q5": "¿Deberían los ciudadanos poder votar directamente sobre leyes y referéndums?",
+      "q6": "¿Es importante que los partidos pequeños puedan entrar en el parlamento?",
+      "q7": "¿Debería el ganador tener siempre más del 50% de apoyo para gobernar?",
+      "q8": "¿Es la simplicidad del recuento más importante que la equidad matemática?"
+    },
+    "disagree": "En desacuerdo",
+    "agree": "De acuerdo",
+    "reveal_button": "Revelar mi sistema ideal →",
+    "align_text": "Tus valores se alinean con:",
+    "score": "Tu puntuación",
+    "restart": "Repetir cuestionario",
+    "congrats": "¡Felicidades!"
+  },
+  "countries": {
+    "uk": "Reino Unido",
+    "in": "India",
+    "us": "EE. UU.",
+    "ca": "Canadá",
+    "ng": "Nigeria",
+    "gh": "Ghana",
+    "ke": "Kenia",
+    "my": "Malasia",
+    "nl": "Países Bajos",
+    "se": "Suecia",
+    "za": "Sudáfrica",
+    "be": "Bélgica",
+    "fi": "Finlandia",
+    "dk": "Dinamarca",
+    "no": "Noruega",
+    "il": "Israel",
+    "es": "España",
+    "fr": "Francia",
+    "br": "Brasil",
+    "ru": "Rusia",
+    "eg": "Egipto",
+    "tr": "Turquía",
+    "ir": "Irán",
+    "co": "Colombia",
+    "pl": "Polonia",
+    "au": "Australia",
+    "ie": "Irlanda",
+    "nz": "Nueva Zelanda",
+    "mt": "Malta",
+    "pg": "Papua Nueva Guinea",
+    "de": "Alemania",
+    "jp": "Japón",
+    "kr": "Corea del Sur",
+    "it": "Italia",
+    "mx": "México",
+    "hu": "Hungría",
+    "th": "Tailandia",
+    "pk": "Pakistán",
+    "mm": "Myanmar",
+    "ch": "Suiza",
+    "is": "Islandia",
+    "uy": "Uruguay",
+    "tw": "Taiwán",
+    "sa": "Arabia Saudita",
+    "cn": "China",
+    "va": "Ciudad del Vaticano",
+    "ae": "EAU",
+    "qa": "Catar",
+    "bn": "Brunéi",
+    "kp": "Corea del Norte",
+    "om": "Omán"
+  }
+}
