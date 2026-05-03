@@ -19,9 +19,9 @@ export default function Hub({ onSelectSystem }) {
   const { t } = useTranslation();
 
   return (
-    <Chapter id="screen-hub" bgPrompt="global election collage ballot boxes flags voting booths warm light photorealistic" noSnap inView>
+    <Chapter id="screen-hub" bgPrompt="minimalist professional dark election theme, abstract blurred architectural geometry, deep navy and slate tones, cinematic lighting, clean elegant composition" noSnap inView>
       <div className="content">
-        <h1 className="hero-title anim-fadeUp" style={{ textAlign: 'center', marginBottom: '0.5rem', fontSize: '3.5rem' }}>
+        <h1 className="hero-title anim-fadeUp" style={{ textAlign: 'center', marginBottom: '0.5rem', fontSize: '3.5rem', textShadow: '0 4px 12px rgba(0,0,0,0.4)' }}>
           {t('hub.title')}
         </h1>
         <p className="anim-fadeUp delay-100" style={{ textAlign: 'center', color: 'var(--text-muted)', fontSize: '1.2rem', marginBottom: '3rem' }}>
